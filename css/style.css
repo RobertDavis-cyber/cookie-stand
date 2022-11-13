@@ -1,0 +1,23 @@
+* {
+    background-color: orange; 
+    
+  }
+  
+  header {
+    border: 10px solid orangered; 
+    padding: 1px;
+    margin: 10px;
+  }
+  
+  main {
+    border: 10px solid orangered;
+    padding: 10px;
+    margin: 5px;
+    float: left;
+  }
+  
+  footer {
+    background-color: orangered; 
+    color: black; 
+
+  }
