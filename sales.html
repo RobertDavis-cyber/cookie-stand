@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sales Data</title>
-
-  <link href="css/style.css" type="text/css" rel="stylesheet"/>
-
-</head>
-<body>
-    <nav>
-        <ul>
-            <a href=""sales.html">New Data</a></li>
-        </ul>
-    </nav>
-  <h2>NEW DATA</h2>
-
-  <form id='addLocation'>
-    <fieldset>
-      <legend>Add New Locations</legend>
-      
-      <div class='formDiv'>
-        <label for='cityName'>City Name: </label>
-        <input type='text' name='cityName' required>
+<html>
+  <head>
+    <title>Sales Data</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <h1>Sales Data</h1>
+    </header>
+    <main>
+      <h2><a href="index.html">Home</a></h2>
+      <h2></h2>
+      <div id="Sales">
+        <table id= "Table"></table>
       </div>
-      <input id='button' type="submit" value="Add">
-    </fieldset>
-  </form>
-
-<table id='cookieData'></table>
-
+      <form id="myshop">
+        <fieldset>
+          <legend>Select Location</legend>
+          <label for="cityName">City Name</label>
+          <input id="cityName" type="text" name="cityName">
+          <!--event.target.city.value-->
+          <label for="minCustomers">Minimum amount of Customers per hour:</label>
+          <input id="minCustomers" type="text" name="minCustomers">
+          <!--event.target.minCustomers.value-->
+          <label for="maxCustomers">Maxiumum amount of Customers per hour:</label>
+          <input id="maxCustomers" type="text" name="maxCustomers">
+           <!--event.target.maxCustomers.value-->
+          <label for="avgCustomers">Average # of Cookies bought per customer:</label>
+          <input id="avgCustomers" type="text" name="avgCustomers">
+            <!--event.target.avgCustomers.value-->
+        </fieldset>
+        <button type="submit">Enter</button>
+      </form>
+</main>
 <footer>
     <div id='info'>
         <p><strong class='strong'>Location:</strong>300A Hibiscus Street, Seattle, WA 98109</p>
-        <p><strong class='strong'>Hours: </strong> 7:00 AM to 7:00 PM</p>
+        <p><strong class='strong'>Hours: </strong> Mon-Sat 6:00 AM to 8:00 PM</p>
 </footer>
 <script src="js/app.js"></script>
 </body>
